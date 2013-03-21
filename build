@@ -1,0 +1,5 @@
+gcc -c ./strcpyl.c -o ./strcpyl.o
+gcc -c ./strcpyr.c -o ./strcpyr.o
+gcc -c ./stringtest.c -o ./stringtest.o
+gcc ./stringtest.o strcpyr.o -o ./stringtestrecursive
+gcc ./stringtest.o strcpyl.o -o ./stringtestloop
