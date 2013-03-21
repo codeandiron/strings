@@ -1,1 +1,21 @@
 A few implementations of the C String Copy Algorithm I did as an excercise on buffer overflows.
+
+String Copy Question ===========================================
+1. To test the recursive implementation of strcpy:
+./src/main/c/stringtestrecursive
+
+2. To test the loop implementation of strcpy:
+./src/main/c/stringtestloop
+
+Answer to the question:
+The strcpy implementations included here are vulnerable to buffer overflow attacks. If the source
+buffer is too large to be accomodated in the destination buffer, parts of the source could be
+written into adjacent memory locations.
+
+These attacks are most dangerous when malignant data is be written to the stack, heap, or other
+important memory locations. This could allow an attacker to (among other things) change the return
+address of the current subroutine. They could redirect the flow of execution to their own code at
+the new address, and gain full control of the computer in this way. This is especially dangerous
+if your application is executing as root, or with certain root capabilities on a unix based system.
+
+Interesting discussion here: https://buildsecurityin.us-cert.gov/bsi-rules/home/g1/848-BSI.html
