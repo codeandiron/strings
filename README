@@ -1,3 +1,12 @@
+                                             
+ .-.  .                     .--.             
+(   )_|_     o             :                 
+ `-.  |  .--..  .--. .-..  |    .-. .,-. .  .
+(   ) |  |   |  |  |(   |  :   (   )|   )|  |
+ `-'  `-'' -' `-'  `-`-`|   `--'`-' |`-' `--|
+                     ._.'           |       ;
+                                    '    `-' 
+
 Two implementations of the C String Copy Algorithm I did as an excercise on buffer overflows. Was originally done as an exercise for a company I interviewed for. One of them uses a loop through the characters, the other uses recursion to file the EOF.
 
 Running the Application ===========================================
