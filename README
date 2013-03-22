@@ -1,8 +1,8 @@
 Two implementations of the C String Copy Algorithm I did as an excercise on buffer overflows. Was originally done as an exercise for a company I interviewed for. One of them uses a loop through the characters, the other uses recursion to file the EOF.
 
-String Copy Question ===========================================
+Running the Application ===========================================
 1. To test the recursive implementation of strcpy:
-./src/main/c/stringtestrecursive
+./stringtestrecursive
 
 2. To test the loop implementation of strcpy:
-./src/main/c/stringtestloop
+./stringtestloop
